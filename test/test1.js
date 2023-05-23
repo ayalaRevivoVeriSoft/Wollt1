@@ -42,7 +42,7 @@ web.click('//*[@id="passwordNext"]/div/button')
 
 
 //anuther page
-web.waitForVisible('//*[contains(text(),"רכישת")]')
+// web.waitForVisible('//*[contains(text(),"רכישת")]')
 web.click('//*[contains(text(),"רכישת")]');
 
 // const num=37-(37%5)
