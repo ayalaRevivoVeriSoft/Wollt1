@@ -46,8 +46,9 @@ web.click('//*[@id="passwordNext"]/div/button')
 
 web.transaction('05')
 //anuther page
-web.pause(4000)
-log.info(web.isExist('div._Ne1rW:nth-child(4)'))
+web.pause(6000)
+var b=web.isExist('div._Ne1rW:nth-child(4)')
+log.info("aa"+b)
  web.click('div._Ne1rW:nth-child(4)>a');
 
 
