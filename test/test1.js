@@ -42,9 +42,10 @@ web.click('//*[@id="passwordNext"]/div/button')
 
 
 web.transaction('05')
-
 //anuther page
-web.waitForVisible('div._Ne1rW:nth-child(4)>a')
+// web.waitForVisible('div._Ne1rW:nth-child(4)>a')
+web.click("div._Ne1rW:nth-child(4)>a");
+
 web.click('div._Ne1rW:nth-child(4)>a');
 
 // const num=37-(37%5)
