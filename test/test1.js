@@ -51,9 +51,9 @@ if(web.isExist('div._Ne1rW:nth-child(4)')==true){
 
 // const num=37-(37%5)
 // 
-const s='//*[contains(text(),"‫גיפט קארד - '+num+' ₪")]'
-//web.waitForVisible(s)
+const s='//h3[contains(text(),"גיפט קארד - '+num+' ₪")]'
 log.info(web.isExist(s))
+
 web.click(s)
 web.click('//*[@id="app"]/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/div[1]/button')
 
