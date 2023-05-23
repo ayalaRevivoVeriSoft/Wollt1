@@ -1,6 +1,7 @@
 
 web.transaction('01')
-web.init()
+
+web.init();
 // web.open('https://www.cibus-sodexo.co.il/')
 // web.selectFrame("/html/body/div[1]/section/div[3]/iframe")
 
@@ -20,7 +21,7 @@ web.init()
 num=45
 web.transaction('03')
 web.open('https://wolt.com/he/discovery')
-web.click('/html/body/div[5]/div/div/div/button[2]')
+web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
 
 
 web.click('//*[@id="mainContent"]/div[1]/div/div[1]/header/div[2]/div[3]/div/div/button');
@@ -94,7 +95,7 @@ if(web.isExist('//*[contains(text(),"יש לך מייל")]',60))
 else{
     log.info("oooof")
 }
-    
+
 
 
 
