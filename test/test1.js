@@ -1,4 +1,4 @@
-web.transaction('10')
+web.transaction('11')
 
 web.transaction('01')
 
@@ -76,13 +76,12 @@ web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
 
 web.click('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
                 
-web.waitForVisible('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI')
-
+web.pause(3000)
 web.click('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI');
 
 
 web.click('div.sc-7cad8347-0.cAnNMw>div:nth-child(6)>button');
-web.waitForVisible('div.COs4mW>div.sc-8f4f0c5f-1.bZAllL>button.sc-eda0895a-2.cFDkWm')
+web.pause(3000)
 
 web.click('div.COs4mW>div.sc-8f4f0c5f-1.bZAllL>button.sc-eda0895a-2.cFDkWm');
 
