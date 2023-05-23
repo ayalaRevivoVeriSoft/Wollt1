@@ -44,9 +44,10 @@ web.click('//*[@id="passwordNext"]/div/button')
 web.transaction('05')
 //anuther page
 // web.waitForVisible('div._Ne1rW:nth-child(4)>a')
-web.click("div._Ne1rW:nth-child(4)>a");
+if(web.isExist('div._Ne1rW:nth-child(4)')==true){
+    web.click('div._Ne1rW:nth-child(4)>a');
 
-web.click('div._Ne1rW:nth-child(4)>a');
+}
 
 // const num=37-(37%5)
 // log.info(num)
