@@ -43,6 +43,7 @@ web.click('//*[@id="passwordNext"]/div/button')
 
 web.transaction('05')
 //anuther page
+web.pause(4000)
 log.info(web.isExist('div._Ne1rW:nth-child(4)'))
  web.click('div._Ne1rW:nth-child(4)>a');
 
@@ -51,11 +52,14 @@ log.info(web.isExist('div._Ne1rW:nth-child(4)'))
 
 // const num=37-(37%5)
 // log.info(num)
+web.pause(4000)
 const s="//h3[contains(text(),'גיפט קארד - "+num+" ₪')]"
 log.info(web.isExist(s))
 
 web.click(s)
 web.transaction('06')
+
+// web.click('//h3[contains(text(),"- 45")]')
 web.click('//*[@id="app"]/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/div[1]/button')
 
 
