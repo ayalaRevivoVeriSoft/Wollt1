@@ -36,7 +36,10 @@ web.transaction('04')
 
 web.waitForVisible("name=Passwd")
 //anuther Page
+log.info(web.isExist("name=Passwd"))
+
 web.type("name=Passwd","AYALAREVIVO1!")
+log.info(web.isExist('//*[@id="passwordNext"]/div/button'))
 
 web.click('//*[@id="passwordNext"]/div/button')
 
