@@ -1,4 +1,4 @@
-web.transaction('11')
+web.transaction('12')
 
 web.transaction('01')
 
@@ -71,13 +71,16 @@ web.click('//*[@id="app"]/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/div[
 
 web.click('button.sc-eda0895a-2.gDxbyT');
 
+web.transaction('07')
 
 web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
 
 web.click('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
                 
-web.pause(3000)
+web.pause(8000)
+log.info(web.isExist('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI'))
 web.click('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI');
+web.transaction('08')
 
 
 web.click('div.sc-7cad8347-0.cAnNMw>div:nth-child(6)>button');
@@ -87,6 +90,7 @@ web.click('div.COs4mW>div.sc-8f4f0c5f-1.bZAllL>button.sc-eda0895a-2.cFDkWm');
 
 
 //page connect to sibus
+web.transaction('09')
 
 
 web.selectFrame("//*[@id='mainContent']/div[4]/iframe");
@@ -102,6 +106,7 @@ web.click('id=btnSubmit');
 
 // web.click('id=btnPay');
 
+web.transaction('10')
 
 
 if(web.isExist('//*[contains(text(),"יש לך מייל")]',60))
