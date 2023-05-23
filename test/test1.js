@@ -1,3 +1,4 @@
+web.transaction('10')
 
 web.transaction('01')
 
@@ -18,7 +19,7 @@ web.init();
 // const money=txt.replace(/[^\d\.]*/g, '')
 // const numMoney=Number(money)
 // const num=numMoney-(numMoney%5)
-num=45
+const num=45
 web.transaction('03')
 web.open('https://wolt.com/he/discovery')
 web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
@@ -46,10 +47,11 @@ web.click('//*[@id="passwordNext"]/div/button')
 
 web.transaction('05')
 //anuther page
-web.pause(6000)
-var b=web.isExist('div._Ne1rW:nth-child(4)')
-log.info("aa"+b)
- web.click('div._Ne1rW:nth-child(4)>a');
+web.pause(10000)
+// var b=web.isExist('div._Ne1rW:nth-child(4)')
+// log.info("aa"+b)
+web.open("https://wolt.com/he/isr/tel-aviv/venue/woltilgiftcards")
+//  web.click('div._Ne1rW:nth-child(4)>a');
 
 
 
