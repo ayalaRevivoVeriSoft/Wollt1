@@ -51,7 +51,7 @@ if(web.isExist('div._Ne1rW:nth-child(4)')==true){
 
 // const num=37-(37%5)
 // 
-const s='//h3[contains(text(),"גיפט קארד - '+num+' ₪")]'
+const s="//h3[contains(text(),'גיפט קארד - "+num+" ₪')]"
 log.info(web.isExist(s))
 
 web.click(s)
