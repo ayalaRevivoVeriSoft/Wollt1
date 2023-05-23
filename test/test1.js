@@ -1,4 +1,4 @@
-web.transaction('12')
+web.transaction('13')
 
 web.transaction('01')
 
@@ -78,8 +78,8 @@ web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
 web.click('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
                 
 web.pause(8000)
-log.info(web.isExist('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI'))
-web.click('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI');
+log.info(web.isExist('svg.y7u1IR'))
+web.click('svg.y7u1IR');
 web.transaction('08')
 
 
