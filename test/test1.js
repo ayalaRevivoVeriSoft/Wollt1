@@ -31,6 +31,7 @@ web.click('//*[contains(text(),"כניסה דרך גוגל")]')
 web.type("id=identifierId","ayala.revivo@verisoft.co" )
 
 web.click('//*[@id="identifierNext"]/div/button')
+web.transaction('04')
 
 
 web.waitForVisible("name=Passwd")
@@ -40,10 +41,11 @@ web.type("name=Passwd","AYALAREVIVO1!")
 web.click('//*[@id="passwordNext"]/div/button')
 
 
+web.transaction('05')
 
 //anuther page
-// web.waitForVisible('//*[contains(text(),"רכישת")]')
-web.click('//*[contains(text(),"רכישת")]');
+web.waitForVisible('div._Ne1rW:nth-child(4)>a')
+web.click('div._Ne1rW:nth-child(4)>a');
 
 // const num=37-(37%5)
 // log.info(num)
