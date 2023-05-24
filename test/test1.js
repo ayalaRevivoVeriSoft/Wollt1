@@ -1,3 +1,4 @@
+web.transaction('22')
 
 web.transaction('01')
 
@@ -70,13 +71,10 @@ web.transaction('06')
 web.click('//*[@id="app"]/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/div[1]/button')
 
 
-// web.click('button.sc-eda0895a-2.gDxbyT');
+web.click('button.sc-eda0895a-2.gDxbyT');
 
 web.transaction('07')
-// xpath:idRelative: //div[@id=\'app\']/div[2]/div[1]/div[1]/div[1]/div/div/header/div[2]/div[3]/div/div/div/div/button/div[3]/div/div[2]
-//   xpath:position: //div[3]/div/div/div/div/button/div[3]/div/div[2]
-//              css: css=#app > div.sc-b8a2517d-0.fgIYEj.rtl > div.sc-b8a2517d-1.kTiEXV > div.sc-6d8ebe7f-0.kjTFFg.sc-b8a2517d-2.cUOtxA > div.sc-6d8ebe7f-1.lkqFsj > div > div > header > div.sc-7d7c6c58-1.gjijOf > div.sc-7d7c6c58-5.ldWo > div > div > div > div > button > div.sc-eda0895a-3.gtpwGZ > div > div.sc-5f688af-7.hvrYZz
-web.click('//div[@id=\'app\']/div[2]/div[1]/div[1]/div[1]/div/div/header/div[2]/div[3]/div/div/div/div/button/div[3]/div/div[2]');
+
 log.info(web.getUrl())
 log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]'))
 // xpath:idRelative: //div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]
