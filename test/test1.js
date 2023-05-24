@@ -1,4 +1,4 @@
-web.transaction('30')
+web.transaction('39')
 
 web.transaction('01')
 
@@ -71,27 +71,22 @@ web.transaction('06')
 web.click('//*[@id="app"]/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/div[1]/button')
 
 
-web.click('button.sc-eda0895a-2.gDxbyT');
+// web.click('button.sc-eda0895a-2.gDxbyT');
 
 web.transaction('07')
-log.info(web.getUrl())
-web.selectFrame("//*[@id='app']/div[2]/div[2]/div[2]/div/aside")
-// xpath:idRelative: //div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/div/div/div[2]
-//   xpath:position: //aside/div[2]/div/div[1]/div/div/div[2]
-//              css: css=#app > div.sc-b8a2517d-0.fgIYEj.rtl > div.sc-b8a2517d-9.fnnQPQ > div.sc-75cea620-0.klDnoY.rtl > div > aside > div.sc-c12b36a1-0.cGazFG > div > div.sc-c12b36a1-5.imwqgU > div > div > div.sc-9e7e45f9-3.kdexQz
-log.info(web.isVisible('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/div/div/div[2]'))
-log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/div/div/div[2]'))
+// xpath:idRelative: //div[@id=\'app\']/div[2]/div[1]/div[1]/div[1]/div/div/header/div[2]/div[3]/div/div/div/div/button/div[3]/div/div[2]
+//   xpath:position: //div[3]/div/div/div/div/button/div[3]/div/div[2]
+//              css: css=#app > div.sc-b8a2517d-0.fgIYEj.rtl > div.sc-b8a2517d-1.kTiEXV > div.sc-6d8ebe7f-0.kjTFFg.sc-b8a2517d-2.cUOtxA > div.sc-6d8ebe7f-1.lkqFsj > div > div > header > div.sc-7d7c6c58-1.gjijOf > div.sc-7d7c6c58-5.ldWo > div > div > div > div > button > div.sc-eda0895a-3.gtpwGZ > div > div.sc-5f688af-7.hvrYZz
+web.click('//div[@id=\'app\']/div[2]/div[1]/div[1]/div[1]/div/div/header/div[2]/div[3]/div/div/div/div/button/div[3]/div/div[2]');
 
-web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/div/div/div[2]');
-
-web.pause(3000)
 // xpath:idRelative: //div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]
 //   xpath:position: //button/div[3]/div[2]
 //              css: css=#app > div.sc-b8a2517d-0.fgIYEj.rtl > div.sc-b8a2517d-9.fnnQPQ > div.sc-75cea620-0.klDnoY.rtl > div > aside > div.sc-c12b36a1-0.cGazFG > div > div.sc-c12b36a1-5.imwqgU > footer > div > div > button > div.sc-eda0895a-3.gtpwGZ > div.sc-c28a442b-2.ikqQDc
 web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]');
+
 web.pause(3000)
 
-log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]'))
+log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[2]'))
 
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
