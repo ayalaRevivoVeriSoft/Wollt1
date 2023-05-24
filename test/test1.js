@@ -1,4 +1,4 @@
-web.transaction('24')
+web.transaction('25')
 
 web.transaction('01')
 
@@ -76,8 +76,8 @@ web.click('button.sc-eda0895a-2.gDxbyT');
 web.transaction('07')
 
 web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
-log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
-web.doubleClick('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
+log.info(web.isExist("//*[@id='app']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button"))
+web.click("//*[@id='app']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button");
 web.pause(3000)
 log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
 if(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')){
