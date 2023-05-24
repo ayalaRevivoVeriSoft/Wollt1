@@ -78,8 +78,8 @@ log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
 web.click('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
                 
 web.pause(8000)
-log.info(web.isExist('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI'))
-web.click('a.sc-54b661ce-0.eZIuim.jS788i.M3yRnd.M3yRnd>div.agFoUI');
+log.info(web.isExist('//*[@id="mainContent"]/div[5]/div[2]/div[1]/ul[2]/li/a/div[3]'))
+web.click('//*[@id="mainContent"]/div[5]/div[2]/div[1]/ul[2]/li/a/div[3]');
 web.transaction('08')
 
 
