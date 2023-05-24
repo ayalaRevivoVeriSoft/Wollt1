@@ -33,7 +33,7 @@ web.click('//*[contains(text(),"כניסה דרך גוגל")]')
 
 web.type("id=identifierId","ayala.revivo@verisoft.co" )
 
-web.click('//*[@id="identifierNext"]/div/button')
+web.click("//*[@id='identifierNext']/div/button")
 web.transaction('04')
 
 
