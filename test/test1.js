@@ -1,4 +1,4 @@
-web.transaction('29')
+web.transaction('30')
 
 web.transaction('01')
 
@@ -74,11 +74,16 @@ web.click('//*[@id="app"]/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/div[
 web.click('button.sc-eda0895a-2.gDxbyT');
 
 web.transaction('07')
-log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[2]'))
+// xpath:idRelative: //div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/div/div/div[2]
+//   xpath:position: //aside/div[2]/div/div[1]/div/div/div[2]
+//              css: css=#app > div.sc-b8a2517d-0.fgIYEj.rtl > div.sc-b8a2517d-9.fnnQPQ > div.sc-75cea620-0.klDnoY.rtl > div > aside > div.sc-c12b36a1-0.cGazFG > div > div.sc-c12b36a1-5.imwqgU > div > div > div.sc-9e7e45f9-3.kdexQz
+web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/div/div/div[2]');
 
-web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[2]');
+// xpath:idRelative: //div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]
+//   xpath:position: //button/div[3]/div[2]
+//              css: css=#app > div.sc-b8a2517d-0.fgIYEj.rtl > div.sc-b8a2517d-9.fnnQPQ > div.sc-75cea620-0.klDnoY.rtl > div > aside > div.sc-c12b36a1-0.cGazFG > div > div.sc-c12b36a1-5.imwqgU > footer > div > div > button > div.sc-eda0895a-3.gtpwGZ > div.sc-c28a442b-2.ikqQDc
+web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]');
 
-web.pause(3000)
 log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[2]'))
 
 web.sendKeys('Down arrow')
