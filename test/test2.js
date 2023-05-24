@@ -1,4 +1,4 @@
-//9
+//8
 web.init();
 web.open('https://wolt.com/he/discovery');
 web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
@@ -35,7 +35,7 @@ web.pause(10000)
 // if(web.isExist('id=footer')==false){
 //    web.pause(10000)
 // }
-web.scrollToElement("id=footer", true,60);
+web.scrollToElement("id=footer", false,60);
 
 web.click("//*[contains(text(),'Gift Card')]");
 
