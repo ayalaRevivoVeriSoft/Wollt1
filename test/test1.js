@@ -1,4 +1,4 @@
-web.transaction('23')
+web.transaction('24')
 
 web.transaction('01')
 
@@ -77,10 +77,13 @@ web.transaction('07')
 
 web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
 log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
-web.click('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
+web.doubleClick('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
 web.pause(3000)
 log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
-      
+if(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')){
+    web.doubleClick('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
+
+}
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
