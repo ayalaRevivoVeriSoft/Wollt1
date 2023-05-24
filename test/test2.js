@@ -1,4 +1,4 @@
-
+//o
 web.init();
 web.open('https://wolt.com/he/discovery');
 web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
@@ -31,7 +31,10 @@ web.click('//div[@id=\'identifierNext\']/div/button/span');
 
 web.type("name=Passwd","AYALAREVIVO1!")
 web.click('//*[@id="passwordNext"]/div/button')
-web.pause(7000)
+web.pause(10000)
+if(web.isExist('id=footer')==false){
+   web.pause(10000)
+}
 web.scrollToElement('id=footer', true,60);
 
 web.click("//*[contains(text(),'Gift Card')]");
@@ -64,5 +67,5 @@ web.click('//main[@id=\'mainContent\']/div[5]/div[2]/div[1]/ul[2]/li/a/div[2]/di
 
 //   xpath:position: //div[2]/div/div[1]/div/div[3]/button/div[2]
 //              css: css=body > div.sc-75cea620-0.klDnoY.rtl > div > aside > div.sc-c12b36a1-0.cGazFG > div > div.sc-c12b36a1-5.hNAlWg > div > div:nth-child(6) > button > div.sc-a47ff230-0.fRvckn
-web.click('//div[2]/div/div[1]/div/div[3]/button/div[2]');
+web.click('//div[2]/div/div[1]/div/div[3]/button/div[2]');ה
 
