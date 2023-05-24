@@ -1,4 +1,4 @@
-web.transaction('22')
+web.transaction('23')
 
 web.transaction('01')
 
@@ -33,7 +33,7 @@ web.click('//*[contains(text(),"כניסה דרך גוגל")]')
 
 web.type("id=identifierId","ayala.revivo@verisoft.co" )
 
-web.click("//*[@id='identifierNext']/div/button")
+web.click('//*[@id="identifierNext"]/div/button')
 web.transaction('04')
 
 
@@ -78,7 +78,9 @@ web.transaction('07')
 web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
 log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
 web.click('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
-                
+web.pause(3000)
+log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
+      
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
@@ -95,9 +97,7 @@ web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
-log.info(web.isExist('li.hzkXlR.FKFYyR.Bvl34_'))
-log.info(web.isExist('div.EQP1jw.J3jiz3.GMfAJz'))
-log.info(web.isExist("div.EQP1jw.J3jiz3.GMfAJz"))
+log.info(web.isExist("li.hzkXlR.FKFYyR.Bvl34_"))
 
 log.info(web.isExist("li.hzkXlR.FKFYyR.Bvl34_"))
 
