@@ -63,6 +63,7 @@ web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/f
 // xpath:idRelative: //main[@id=\'mainContent\']/div[5]/div[2]/div[1]/ul[2]/li/a/div[2]/div[2]
 //   xpath:position: //a/div[2]/div[2]
 //              css: css=#mainContent > div._7jNY6.rtl > div.Ma9ZAd > div:nth-child(1) > ul.sc-62a2b279-1.fFESDh > li > a > div.Fc0K3Z > div.V4XWr4.bVBEQE
+web.pause(5000)
 web.click("//main[@id='mainContent']/div[5]/div[2]/div[1]/ul[2]/li/a/div[2]/div[2]");
 
 //   xpath:position: //div[2]/div/div[1]/div/div[3]/button/div[2]
