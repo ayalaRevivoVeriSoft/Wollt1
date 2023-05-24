@@ -74,19 +74,12 @@ web.click('//*[@id="app"]/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/div[
 web.click('button.sc-eda0895a-2.gDxbyT');
 
 web.transaction('07')
+log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[2]'))
 
-web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
-log.info(web.isExist("//*[@id='app']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button"))
-web.click("//*[@id='app']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button");
-web.doubleClick("//*[@id='app']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button");
+web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[2]');
 
-log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
-if(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')){
-web.doubleClick("//*[@id='app']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button");
-
-}
 web.pause(3000)
-log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
+log.info(web.isExist('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[2]'))
 
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
