@@ -1,4 +1,4 @@
-web.transaction('19')
+web.transaction('20')
 
 web.transaction('01')
 
@@ -95,6 +95,10 @@ web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
 web.sendKeys('Down arrow')
+div.EQP1jw.J3jiz3.GMfAJz
+log.info(web.isExist('li.hzkXlR.FKFYyR.Bvl34_'))
+log.info(web.isExist('div.EQP1jw.J3jiz3.GMfAJz'))
+log.info(web.isExist("div.EQP1jw.J3jiz3.GMfAJz"))
 
 log.info(web.isExist("li.hzkXlR.FKFYyR.Bvl34_"))
 
