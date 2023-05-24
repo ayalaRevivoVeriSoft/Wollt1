@@ -1,4 +1,4 @@
-web.transaction('18')
+web.transaction('19')
 
 web.transaction('01')
 
@@ -23,6 +23,8 @@ const num=45
 web.transaction('03')
 web.open('https://wolt.com/he/discovery')
 web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
+
+
 
 
 web.click('//*[@id="mainContent"]/div[1]/div/div[1]/header/div[2]/div[3]/div/div/button');
@@ -77,7 +79,23 @@ web.waitForVisible('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG')
 log.info(web.isExist('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG'))
 web.click('button.sc-eda0895a-2.qNZTd.sc-b10f3074-4.gXMRvG');
                 
-web.pause(8000)
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+web.sendKeys('Down arrow')
+
 log.info(web.isExist("li.hzkXlR.FKFYyR.Bvl34_"))
 
 web.click("li.hzkXlR.FKFYyR.Bvl34_");
