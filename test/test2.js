@@ -35,7 +35,8 @@ web.pause(10000)
 // if(web.isExist('id=footer')==false){
 //    web.pause(10000)
 // }
-web.scrollToElement('//footer[@id="footer"]', false,60);
+log.info(web.isExist("//*[@id='footer']"))
+web.scrollToElement("//*[@id='footer']", false,60);
 
 web.click("//*[contains(text(),'Gift Card')]");
 
