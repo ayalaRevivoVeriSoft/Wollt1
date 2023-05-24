@@ -72,3 +72,41 @@ web.click("/html/body/div[2]/div[2]/main/div[5]/div[2]/div[1]/ul[2]/li");
 //              css: css=body > div.sc-75cea620-0.klDnoY.rtl > div > aside > div.sc-c12b36a1-0.cGazFG > div > div.sc-c12b36a1-5.hNAlWg > div > div:nth-child(6) > button > div.sc-a47ff230-0.fRvckn
 web.click('//div[2]/div/div[1]/div/div[3]/button/div[2]');
 log.info("kk")
+
+
+web.pause(3000)
+
+web.click('div.COs4mW>div.sc-8f4f0c5f-1.bZAllL>button.sc-eda0895a-2.cFDkWm');
+
+
+//page connect to sibus
+web.transaction('09')
+
+
+web.selectFrame("//*[@id='mainContent']/div[4]/iframe");
+
+web.type("//*[@id='txtUserName']","ayala.revivo@verisoft.co");
+
+
+web.type("//*[@id='txtPassword']","AYALAREVIVO1!");
+
+
+web.click('id=btnSubmit');
+
+
+// web.click('id=btnPay');
+
+web.transaction('10')
+
+
+if(web.isExist('//*[contains(text(),"יש לך מייל")]',60))
+    log.info("wow");
+else{
+    log.info("oooof")
+}
+
+
+
+
+
+
