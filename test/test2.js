@@ -1,4 +1,4 @@
-
+//7
 web.init();
 web.open('https://wolt.com/he/discovery');
 web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
@@ -32,11 +32,8 @@ web.click('//div[@id=\'identifierNext\']/div/button/span');
 web.type("name=Passwd","AYALAREVIVO1!")
 web.click('//*[@id="passwordNext"]/div/button')
 web.pause(10000)
-// if(web.isExist('id=footer')==false){
-//    web.pause(10000)
-// }
-log.info(web.isExist("//*[@id='footer']"))
-web.scrollToElement("//*[@id='footer']", false,60);
+
+web.scrollToElement('//footer[@id=\'footer\']', false,60);
 
 web.click("//*[contains(text(),'Gift Card')]");
 
