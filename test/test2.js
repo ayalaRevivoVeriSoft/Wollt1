@@ -1,4 +1,4 @@
-//2
+//9
 web.init();
 web.open('https://wolt.com/he/discovery');
 web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
@@ -31,7 +31,7 @@ web.click('//div[@id=\'identifierNext\']/div/button/span');
 
 web.type("name=Passwd","AYALAREVIVO1!")
 web.click('//*[@id="passwordNext"]/div/button')
-web.pause(3000)
+web.pause(10000)
 // if(web.isExist('id=footer')==false){
 //    web.pause(10000)
 // }
@@ -53,6 +53,7 @@ web.click('//div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/footer/div/div/div/
 //   xpath:position: //div[3]/div/div/div/div/button/div[3]/div/div[3]
 //              css: css=#app > div.sc-b8a2517d-0.fgIYEj.rtl > div.sc-b8a2517d-1.kTiEXV > div.sc-6d8ebe7f-0.kjTFFg.sc-b8a2517d-2.cUOtxA > div.sc-6d8ebe7f-1.dvaJEz > div > div > header > div.sc-7d7c6c58-1.gjijOf > div.sc-7d7c6c58-5.ldWo > div > div > div > div > button > div.sc-eda0895a-3.gtpwGZ > div > div.sc-5f688af-8.cTDFkW
 web.click('//div[@id=\'app\']/div[2]/div[1]/div[1]/div[1]/div/div/header/div[2]/div[3]/div/div/div/div/button/div[3]/div/div[3]');
+web.pause(5000)
 web.click("//*[contains(text(),'לצפייה בהזמנ')]");
 
 // xpath:idRelative: //div[@id=\'app\']/div[2]/div[2]/div[2]/div/aside/div[2]/div/div[1]/footer/div/div/button/div[3]/div[2]
