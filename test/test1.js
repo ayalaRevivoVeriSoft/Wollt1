@@ -1,4 +1,4 @@
-web.transaction('25')
+web.transaction('26')
 
 web.transaction('01')
 
@@ -27,7 +27,7 @@ web.click('div.sc-3acf7193-2.kUcLXW>button.sc-eda0895a-2.kcvQDI')
 
 
 
-web.click('//*[@id="mainContent"]/div[1]/div/div[1]/header/div[2]/div[3]/div/div/button');
+web.click("//*[@id='mainContent']/div[1]/div/div[1]/header/div[2]/div[3]/div/div/button");
 
 web.click('//*[contains(text(),"כניסה דרך גוגל")]')
 
