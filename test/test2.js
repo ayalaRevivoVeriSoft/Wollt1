@@ -32,8 +32,9 @@ web.click('//div[@id=\'identifierNext\']/div/button/span');
 web.type("name=Passwd","AYALAREVIVO1!")
 web.click('//*[@id="passwordNext"]/div/button')
 web.pause(10000)
+web.open('https://wolt.com/he/isr/tel%20aviv/venue/woltilgiftcards')
 
-web.scrollToElement('//footer[@id=\'footer\']', false,60);
+// web.scrollToElement('//footer[@id=\'footer\']', false,60);
 
 web.click("//*[contains(text(),'Gift Card')]");
 
