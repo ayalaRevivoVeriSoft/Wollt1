@@ -64,5 +64,5 @@ web.click('//main[@id=\'mainContent\']/div[5]/div[2]/div[1]/ul[2]/li/a/div[2]/di
 
 //   xpath:position: //div[2]/div/div[1]/div/div[3]/button/div[2]
 //              css: css=body > div.sc-75cea620-0.klDnoY.rtl > div > aside > div.sc-c12b36a1-0.cGazFG > div > div.sc-c12b36a1-5.hNAlWg > div > div:nth-child(6) > button > div.sc-a47ff230-0.fRvckn
-web.click('//div[2]/div/div[1]/div/div[3]/button/div[2]');ה
+web.click('//div[2]/div/div[1]/div/div[3]/button/div[2]');
 
