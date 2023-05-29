@@ -14,7 +14,7 @@ web.transaction('03')
 web.pause(2000)
 log.info(web.getUrl())
 web.type('id=identifierId', 'ar0527167617@gmail.com')
-web.click("//span[contains(text(),'הבא') and @class='VfPpkd-vQzf8d']")
+web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.qIypjc.TrZEUc.lw1w4b")
 
 web.transaction('04')
 web.pause(2000)
