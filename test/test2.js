@@ -1,4 +1,4 @@
-//8
+//4
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -20,7 +20,7 @@ web.pause(2000)
 log.info(web.isExist("name=Passwd"))
 web.type("name=Passwd","AYALAREVIVO1!")
 web.pause(2000)
-web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.qIypjc.TrZEUc.lw1w4b")
+web.click('//*[@id="passwordNext"]/div/button')
 
 web.transaction('05')
 web.open('https://wolt.com/he/discovery');
