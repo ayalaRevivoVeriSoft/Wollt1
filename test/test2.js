@@ -1,4 +1,4 @@
-//4
+//6
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -8,7 +8,7 @@ web.selectWindow('title=בואו לגלות עולם שלם של מסעדות & 
 
 web.transaction('02')
 web.click("//*[contains(text(),'כניסה')]")
-web.click("//*[contains(text(),'כניסה דרך גוגל')]")
+web.click("//*[contains(text(),'כניסה דרך גוגל')]",60)
 
 web.transaction('03')
 web.pause(2000)
@@ -57,7 +57,6 @@ if(web.isExist('//*[contains(text(),"יש לך מייל")]',60))
     log.info("wow");
 if(web.isExist('//*[contains(text(),"אישור העסקה לא הצלי")]',60))
     log.info("oooof")
-
 
 
 
