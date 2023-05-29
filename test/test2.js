@@ -23,7 +23,6 @@ web.pause(2000)
 web.click('//*[@id="passwordNext"]/div/button')
 
 web.transaction('05')
-web.open('https://wolt.com/he/discovery');
 web.pause(10000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
