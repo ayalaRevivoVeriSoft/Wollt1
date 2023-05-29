@@ -24,7 +24,7 @@ web.click("//*[@id='passwordNext']/div/button")
 web.transaction('05')
 web.pause(2000)
 log.info(web.isExist("//*[@id='passwordNext']/div/button"))
-web.pause(10000)
+web.pause(20000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
 web.click("//*[contains(text(),'להוסיף להזמנה')]");
