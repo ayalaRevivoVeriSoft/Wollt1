@@ -1,4 +1,4 @@
-//9
+//8
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -23,8 +23,8 @@ web.pause(2000)
 web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.qIypjc.TrZEUc.lw1w4b")
 
 web.transaction('05')
-web.pause(10000)
 web.open('https://wolt.com/he/discovery');
+web.pause(10000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
 web.click("//*[contains(text(),'להוסיף להזמנה')]");
