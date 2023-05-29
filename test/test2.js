@@ -13,7 +13,7 @@ web.click("//*[contains(text(),'כניסה דרך גוגל')]")
 web.pause(2000)
 web.type('id=identifierId', 'ar0527167617@gmail.com')
 
-web.click("//*[contains(text(),'הבא')]")
+web.click("//span[contains(text(),'הבא') and @class='VfPpkd-vQzf8d']")
 
 web.type("name=Passwd","AYALAREVIVO1!")
 web.pause(2000)
