@@ -1,4 +1,4 @@
-//6
+//8
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
