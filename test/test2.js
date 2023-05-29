@@ -1,4 +1,4 @@
-//5
+//1
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -12,7 +12,6 @@ web.click("//*[contains(text(),'כניסה דרך גוגל')]")
 
 web.transaction('03')
 web.pause(2000)
-log.info(web.getUrl())
 web.type('id=identifierId', 'ar0527167617@gmail.com')
 web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.qIypjc.TrZEUc.lw1w4b")
 
@@ -24,6 +23,7 @@ web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-
 
 web.transaction('05')
 web.pause(10000)
+log.info(web.getUrl())
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
 web.click("//*[contains(text(),'להוסיף להזמנה')]");
