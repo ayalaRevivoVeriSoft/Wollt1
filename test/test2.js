@@ -16,7 +16,7 @@ web.pause(2000)
 web.click('//button[1]/div[3]/div[2]');
 
 
-web.type('id=identifierId', 'ayala.revivo@verisoft.co');
+web.type('id=identifierId', 'ar0527167617@gmail.com');
 
 // xpath:idRelative: //div[@id=\'identifierNext\']/div/button/span
 //   xpath:position: //div[2]/div/div[1]/div/div/button/span
