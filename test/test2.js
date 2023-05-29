@@ -1,4 +1,4 @@
-//1
+//5
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -8,7 +8,7 @@ web.selectWindow('title=בואו לגלות עולם שלם של מסעדות & 
 
 web.transaction('02')
 web.click("//*[contains(text(),'כניסה')]")
-web.click("//*[contains(text(),'כניסה דרך גוגל')]")
+web.click("//*[contains(text(),'כניסה דרך גוגל')]",60)
 
 web.transaction('03')
 web.pause(2000)
@@ -20,7 +20,9 @@ web.pause(2000)
 web.type("name=Passwd","AYALAREVIVO1!")
 web.pause(2000)
 web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.qIypjc.TrZEUc.lw1w4b")
+web.pause(2000)
 
+web.isExist("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.qIypjc.TrZEUc.lw1w4b")
 web.transaction('05')
 web.pause(10000)
 log.info(web.getUrl())
