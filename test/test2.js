@@ -17,12 +17,13 @@ web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-
 
 web.transaction('04')
 web.pause(2000)
-log.info(web.isExist("name=Passwd"))
 web.type("name=Passwd","AYALAREVIVO1!")
 web.pause(2000)
-web.click('//*[@id="passwordNext"]/div/button')
+web.click("//*[@id='passwordNext']/div/button")
 
 web.transaction('05')
+web.pause(2000)
+log.info(web.isExist("//*[@id='passwordNext']/div/button"))
 web.pause(10000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
@@ -56,6 +57,5 @@ if(web.isExist('//*[contains(text(),"יש לך מייל")]',60))
     log.info("wow");
 if(web.isExist('//*[contains(text(),"אישור העסקה לא הצלי")]',60))
     log.info("oooof")
-
 
 
