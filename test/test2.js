@@ -1,4 +1,4 @@
-//5
+//9
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -21,11 +21,10 @@ log.info(web.isExist("name=Passwd"))
 web.type("name=Passwd","AYALAREVIVO1!")
 web.pause(2000)
 web.click("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.LQeN7.qIypjc.TrZEUc.lw1w4b")
-web.pause(2000)
-log.info(web.isExist("name=Passwd"))
+
 web.transaction('05')
 web.pause(10000)
-log.info(web.getUrl())
+web.open('https://wolt.com/he/discovery');
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
 web.click("//*[contains(text(),'להוסיף להזמנה')]");
