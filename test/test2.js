@@ -24,11 +24,11 @@ web.click("//*[@id='passwordNext']/div/button")
 web.transaction('05')
 web.pause(2000)
 
-var ss = web.takeScreenshot();
+const ss = web.takeScreenshot();
 log.info(__dirname)
 log.info(ss)
 require("fs").writeFileSync(__dirname+"\\screen.png", ss, 'base64');
-require("fs").writeFileSync("C:\\Apps\\screen.png", ss, 'base64');
+// require("fs").writeFileSync("C:\\Apps\\screen.png", ss, 'base64');
 
 
 // web.pause(20000)
