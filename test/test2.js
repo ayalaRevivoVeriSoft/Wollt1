@@ -27,6 +27,9 @@ web.pause(2000)
 var ss = web.takeScreenshot();
 log.info(__dirname)
 require("fs").writeFileSync(__dirname+"\\screen.png", ss, 'base64');
+require("fs").writeFileSync("C:\\Apps\\screen.png", ss, 'base64');
+
+
 // web.pause(20000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
