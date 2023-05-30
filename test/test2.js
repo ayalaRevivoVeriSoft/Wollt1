@@ -1,4 +1,4 @@
-//1
+//8
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -23,8 +23,11 @@ web.click("//*[@id='passwordNext']/div/button")
 
 web.transaction('05')
 web.pause(2000)
-web.pause(20000)
-log.info(web.getUrl())
+
+var ss = web.takeScreenshot();
+
+require("fs").writeFileSync(__dirname+"\\screen.png", ss, 'base64');
+// web.pause(20000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
 web.click("//*[contains(text(),'להוסיף להזמנה')]");
