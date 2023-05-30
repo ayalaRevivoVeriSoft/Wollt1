@@ -1,4 +1,4 @@
-//8
+//1
 web.transaction('01')
 web.init();
 web.open('https://wolt.com/he/discovery');
@@ -23,8 +23,8 @@ web.click("//*[@id='passwordNext']/div/button")
 
 web.transaction('05')
 web.pause(2000)
-log.info(web.isExist("//*[@id='passwordNext']/div/button"))
 web.pause(20000)
+log.info(web.getUrl())
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
 web.click("//*[contains(text(),'להוסיף להזמנה')]");
@@ -57,5 +57,4 @@ if(web.isExist('//*[contains(text(),"יש לך מייל")]',60))
     log.info("wow");
 if(web.isExist('//*[contains(text(),"אישור העסקה לא הצלי")]',60))
     log.info("oooof")
-
 
