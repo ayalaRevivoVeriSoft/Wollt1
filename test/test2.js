@@ -25,12 +25,14 @@ web.transaction('05')
 web.pause(2000)
 
 const ss = web.takeScreenshot();
-log.info(__dirname)
 log.info(ss)
 require("fs").writeFileSync(__dirname+"\\screen.png", ss, 'base64');
 // require("fs").writeFileSync("C:\\Apps\\screen.png", ss, 'base64');
 
-
+web.click("//*[contains(text(),'אשר את מספר הטלפון')]")
+web.pause(2000)
+ss = web.takeScreenshot();
+log.info(ss)
 // web.pause(20000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
