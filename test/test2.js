@@ -27,13 +27,17 @@ web.pause(2000)
 const ss = web.takeScreenshot();
 log.info(ss)
 require("fs").writeFileSync(__dirname+"\\screen.png", ss, 'base64');
-// require("fs").writeFileSync("C:\\Apps\\screen.png", ss, 'base64');
-
-web.click("//*[contains(text(),'אשר את מספר הטלפון')]")
+web.click("//input[contains(text(),'אשר את מספר הטלפון')]")
 web.pause(2000)
 var s2 = web.takeScreenshot();
 log.info(s2)
-// web.pause(20000)
+web.type("//input[contains(@aria-label,'טלפון')]","0527167617")
+web.click("//input[contains(text(),'הבא')]")
+
+web.pause(2000)
+var s3 = web.takeScreenshot();
+log.info(s3)
+web.pause(80000)
 web.click("//*[contains(text(),'Gift Card')]");
 web.click("//*[contains(text(),'גיפט קארד - 45')]");
 web.click("//*[contains(text(),'להוסיף להזמנה')]");
